@@ -2,8 +2,8 @@
   <div class="home">
     <Search />
     <ul>
-      <li v-for="photo in photos" :key="photo.url">
-        {{ photo.url }}
+      <li v-for="photo in photos" :key="photo.urls.regular">
+        {{ photo.urls.regular }}
       </li>
     </ul>
     
@@ -28,7 +28,8 @@ export default {
     };
   },
   async created() {
-    this.photos = await API.fetchImages(4);
+    this.photos = await API.fetchImages();
+    return API.results
     // const data = await request.json();
     // this.photos = data.results;
   },
