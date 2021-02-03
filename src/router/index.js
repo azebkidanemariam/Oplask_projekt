@@ -26,4 +26,11 @@ const router = new VueRouter({
   routes
 })
 
-export default router
+ export default router
+const BASE_URL= 'https://api.unsplash.com/search/photos?page=1&query=birthday&client_id=zXErmLe38aW7y1IEI12Fct0Q_AlmmIsu1uEGT3iH2Ws'
+
+export async function fetchImages(page=1){
+  const request = await fetch(`${BASE_URL}/photos?page=${page}`)
+  const data = await request.json()
+  return data.results
+}
