@@ -32,6 +32,6 @@ const BASE_URL= 'https://api.unsplash.com/search/photos?page=1&query=birthday&cl
 
 export async function fetchImages(page=1){
   const request = await fetch(`${BASE_URL}/photos?page=${page}`)
-  const data = await request.json()
+  const data = await request.json()["urls"]["raw"]
   return data.results
 }

@@ -4,12 +4,18 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
+    <Home />
+    <About />
     <router-view/>
   </div>
 </template>
 
 <script>
+import Home from "@/views/Home.vue"
+import About from "@/views/About.vue"
 export default {
+  name : "App",
+  component:{Home,About}
   
 }
 </script>
