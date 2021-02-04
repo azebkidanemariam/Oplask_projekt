@@ -13,7 +13,7 @@
 <script>
 // @ is an alias to /src
 import * as API from '../router/mock.js'
- import Search from "@/components/searchForm.vue";
+import Search from "@/components/Search.vue";
  
 
 export default {

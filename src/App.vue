@@ -2,20 +2,20 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/single-image">Single Image</router-link>
     </div>
     <Home />
-    <About />
+    <SingleImage />
     <router-view/>
   </div>
 </template>
 
 <script>
 import Home from "@/views/Home.vue"
-import About from "@/views/About.vue"
+import SingleImage from "@/views/SingleImage.vue"
 export default {
   name : "App",
-  component:{Home,About}
+  component:{Home,SingleImage}
   
 }
 </script>

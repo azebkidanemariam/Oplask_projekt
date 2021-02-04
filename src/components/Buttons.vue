@@ -1,10 +1,10 @@
 <template>
-  <div class="hello"></div>
+  <div class="buttons"></div>
 </template>
 
 <script>
 export default {
-  // name: "HelloWorld",
+  name: "Buttons",
   // props: {
   //   msg: String,
   // },
