@@ -6,14 +6,16 @@
         {{ photo.urls.regular }}
       </li>
     </ul>
-    
+   <Images 
+   msn="Images component i Home sida"/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import * as API from '../router/mock.js'
- import Search from "@/components/searchForm.vue";
+import Search from "@/components/Search.vue";
+import Images from "@/components/Images.vue";
  
 
 export default {
@@ -21,7 +23,7 @@ export default {
   props : {
     photourl:Object
   },
-  components :{Search},
+  components :{Search, Images},
   data() {
     return {
       photos: [],
