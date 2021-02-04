@@ -1,13 +1,15 @@
 <template>
-  <div class="buttons"></div>
+  <div class="buttons">
+    <h1>{{ msn }}</h1>
+  </div>
 </template>
 
 <script>
 export default {
   name: "Buttons",
-  // props: {
-  //   msg: String,
-  // },
+  props: {
+    msn: String,
+  },
 };
 </script>
 
