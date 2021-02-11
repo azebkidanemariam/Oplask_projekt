@@ -2,9 +2,9 @@
   <div class="home">
     <Search />
     <!-- <Image /> -->
-    <Images msn="Hej! jag är images component i Home.vue" />
+    <Images  />
     <ul class="gallery-container">
-      <li v-for="photo in photos" :key="photo.urls.regular">
+      <li v-for="photo in photos" :key="photo.urls.small">
         <img :src="photo.urls.small" />
       </li>
     </ul>
