@@ -6,6 +6,7 @@
 
 <script>
 export default {
+  // name :"Image",
 props:{
     msn: String
 }
@@ -13,5 +14,6 @@ props:{
 </script>
 
 <style>
+
 
 </style>

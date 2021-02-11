@@ -35,3 +35,4 @@ export async function fetchImages(page=1){
   const data = await request.json()["urls"]["raw"]
   return data.results
 }
+
