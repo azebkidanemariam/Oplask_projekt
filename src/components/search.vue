@@ -1,6 +1,6 @@
 <template>
     <div class="search">
-      
+      <!-- test -->
       <input type="text" 
       id="searchInput" 
       placeholder="I am looking for..." 
